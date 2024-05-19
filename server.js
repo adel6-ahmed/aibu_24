@@ -3,7 +3,7 @@ const app = express();
 require('express-async-errors');
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://zeyad:12345@main.nf9ms.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://adellhmt:D6Txn5YeNX2pOHkh@cluster0.6oxyknn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true })
     .catch(err => console.log(err));
 
 
