@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    
+
   },
   "engines": {
     "node": "20.x",
@@ -25,5 +28,7 @@
     "mongodb": "^6.6.2",
     "mongoose": "^8.4.0",
     "react-toastify": "^10.0.5"
+    
   }
+  
 }
