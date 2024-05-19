@@ -1,12 +1,6 @@
-module.exports = app => {
-    app.use('/api/users', require('./users'));
-    app.use('/api/auth', require('./auth'));
-    app.use('/api/products', require('./products'));
-    app.use('/api/cart', require('./cart'))
-}
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://adellhmt:GfDyEiGB1YT5X13S@cluster0.6oxyknn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://adellhmt:<password>@cluster0.6oxyknn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -30,5 +24,3 @@ async function run() {
   }
 }
 run().catch(console.dir);
-const mongoose = require('mongoose');
-
