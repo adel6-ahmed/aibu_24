@@ -16,7 +16,4 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-const mongodbConnection = require('./mongodbConnection');
-
-mongodbConnection.run().catch(console.dir);
 
