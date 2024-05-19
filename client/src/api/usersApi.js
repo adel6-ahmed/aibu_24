@@ -1,8 +1,12 @@
 import http from './http';
-import config from '../config'
+import config from '../config';
 
-const createUser = data => http.post(`${config.apiUrl}/users`, data)
-const loginUser = data => http.post(`${config.apiUrl}/auth`, data)
+const createUser = (userData) => http.post(`${config.apiUrl}/users`, userData);
+const loginUser = (loginData) => http.post(`${config.apiUrl}/auth`, loginData);
 
-const usersApi = {createUser, loginUser}
-export default usersApi
+const usersApi = {
+    createUser,
+    loginUser
+};
+
+export default usersApi;
